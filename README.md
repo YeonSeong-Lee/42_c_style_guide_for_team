@@ -25,7 +25,7 @@ free to use it, and happy team project!
 	scene = malloc(sizeof(t_scene));
 	```
 
-3. 내부적으로 malloc으로 메로리를 할당하는 함수는 함수명 앞에 new_를 붙인다.
+3. 내부적으로 malloc으로 메모리를 할당하는 함수는 함수명 앞에 new_를 붙인다.
 
 	ex) ⭕️ 
 	```C
