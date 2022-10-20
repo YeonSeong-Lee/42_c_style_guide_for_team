@@ -142,3 +142,22 @@ free to use it, and happy team project!
 	```C
 	if (foo < 42)
 		return (~~~);
+
+4. 가능한 if 중첩을 피한다.
+
+	ex) ❌
+	```C
+	if (foo == TRUE)
+	{
+		if (bar == TURE)
+		{
+			return (~~~);
+		}
+	}
+	```
+
+	ex) ⭕️ 
+	```C
+	if (foo == TRUE && bar == TRUE)
+		return (~~~);
+	```
