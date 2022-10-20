@@ -149,7 +149,7 @@ free to use it, and happy team project!
 	```C
 	if (foo == TRUE)
 	{
-		if (bar == TURE)
+		if (bar == TRUE)
 		{
 			return (~~~);
 		}
