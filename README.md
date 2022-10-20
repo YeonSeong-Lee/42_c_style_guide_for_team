@@ -70,7 +70,6 @@ free to use it, and happy team project!
 	```C
 	return (min_light)
 	```
----
 
 2. if else 보다는 early return을 선호한다.
 
