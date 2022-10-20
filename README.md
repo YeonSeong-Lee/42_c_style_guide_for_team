@@ -97,7 +97,7 @@ free to use it, and happy team project!
 
 ## if, 조건문
 
-1. 조건문안 부정문을 지양, 긍정문 지향한다.
+1. 조건문안에서 부정문을 지양, 긍정문을 지향한다.
 
 	ex) ❌
 	```C
