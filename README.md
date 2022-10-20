@@ -161,3 +161,46 @@ free to use it, and happy team project!
 	if (foo == TRUE && bar == TRUE)
 		return (~~~);
 	```
+
+## while, 반복문
+
+1. 가능하다면 포인터 연산을 통해서 순회한다.
+
+   	ex) ❌
+	```C
+	while(foo[i] != NULL)
+	{
+		bar = foo[i];
+		~~
+		i++;
+	}
+	```
+
+	ex) ⭕️ 
+	```C
+	while(foo != NULL)
+	{
+		bar = *foo;
+		~~
+		foo++;
+	}
+	```
+
+2. 증감연산자는 조건문안에 넣지 않는다.
+
+	ex) ❌
+	```C
+	while(i++ < 42)
+	{
+		~~
+	}
+	```
+
+	ex) ⭕️ 
+	```C
+	while(i < 42)
+	{
+		~~
+		i++;
+	}
+	```
