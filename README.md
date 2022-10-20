@@ -129,7 +129,7 @@ free to use it, and happy team project!
 	```
 
 
-3. 비교를 할 때는 기준이 되는 값을 좌항에 둔다.
+3. 비교를 할 때는 비교가 되는 값을 좌항에 둔다.
 
 	ex) ❌
 	```C
