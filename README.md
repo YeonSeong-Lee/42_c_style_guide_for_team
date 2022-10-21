@@ -164,25 +164,26 @@ free to use it, and happy team project!
 
 ## while, 반복문
 
-1. 가능하다면 포인터 연산을 통해서 순회한다.
+1. 포인터 연산을 통한 순환보다 인덱스를 이용한 순회를 선호한다.
 
-   	ex) ❌
-	```C
-	while(foo[i] != NULL)
-	{
-		bar = foo[i];
-		~~
-		i++;
-	}
-	```
 
-	ex) ⭕️ 
+	ex) ❌ 
 	```C
 	while(foo != NULL)
 	{
 		bar = *foo;
 		~~
 		foo++;
+	}
+	```
+
+	ex) ⭕️
+	```C
+	while(foo[i] != NULL)
+	{
+		bar = foo[i];
+		~~
+		i++;
 	}
 	```
 
