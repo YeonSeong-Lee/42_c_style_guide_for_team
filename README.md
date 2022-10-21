@@ -25,13 +25,6 @@ free to use it, and happy team project!
 	scene = malloc(sizeof(t_scene));
 	```
 
-3. 내부적으로 malloc으로 메모리를 할당하는 함수는 함수명 앞에 `new_`를 붙인다.
-
-	ex) ⭕️ 
-	```C
-	foo = new_sphere();
-	```
-
 ---
 
 ## function name
@@ -53,6 +46,13 @@ free to use it, and happy team project!
 	ex) ⭕️ 
 	```C
 	new_sphere()
+	```
+
+3. 내부적으로 malloc으로 메모리를 할당하는 함수는 함수명 앞에 `new_`를 붙인다.
+
+	ex) ⭕️ 
+	```C
+	foo = new_sphere();
 	```
 
 ---
@@ -205,3 +205,8 @@ free to use it, and happy team project!
 		i++;
 	}
 	```
+---
+
+## 변수선언
+
+1. `const`를 선언할 수 있으면 선언부터
