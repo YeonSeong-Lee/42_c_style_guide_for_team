@@ -173,7 +173,7 @@ free to use it, and happy team project!
 	{
 		bar = *foo;
 		~~
-		foo++;
+		++foo;
 	}
 	```
 
@@ -183,7 +183,7 @@ free to use it, and happy team project!
 	{
 		bar = foo[i];
 		~~
-		i++;
+		++i;
 	}
 	```
 
@@ -191,7 +191,7 @@ free to use it, and happy team project!
 
 	ex) ❌
 	```C
-	while(i++ < 42)
+	while(++i < 42)
 	{
 		~~
 	}
@@ -202,9 +202,29 @@ free to use it, and happy team project!
 	while(i < 42)
 	{
 		~~
+		++i;
+	}
+	```
+3. 전위연사자를 후위연산자보다 선호한다.
+
+	ex) ❌
+	```C
+	while(i < 42)
+	{
+		~~
 		i++;
 	}
 	```
+
+	ex) ⭕️ 
+	```C
+	while(i < 42)
+	{
+		~~
+		++i;
+	}
+	```
+
 ---
 
 ## 변수선언
